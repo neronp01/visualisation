@@ -1,0 +1,162 @@
+
+.node {
+    cursor: pointer;
+}
+
+.node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node--leaf {
+    fill: white;
+}
+
+.label {
+    font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+    pointer-events: none;
+}
+
+#barmenue{
+    margin-top: 15px;
+    border-radius: 10px;
+    z-index: -10;
+}
+
+#circlePhoto{
+    position:absolute;
+    top:-10px;
+    left:720px
+}
+#menuText{
+    position:absolute;
+    top:10px;
+    z-index: 10;
+
+}
+
+.canada-map{
+    opacity:0.75;
+
+    fill:rgb(132,132,132);
+    stroke: #ffffff;
+    stroke-width: 0.005em;
+}
+
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+
+.backgroundRect{
+    fill:#ffffff;
+    stroke:rgb(132,132,132)
+}
+
+.text_droite{
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 60px;
+    font: 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:rgb(132,132,132)
+}
+
+.title_visualisation{
+    color:rgb(132,132,132);
+    font: 40px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ref{
+    font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:rgb(132,132,132)
+}
+.separator_line{
+    margin-right: 60px;
+}
+
+div.scroll {
+    width: 850px;
+    height: 950px;
+    overflow: scroll;
+
+}
+
+.text_button{
+    font: 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+.docc{
+    position:static;
+    top:10px;
+}
+
+
+saut_ligne{
+    border-style: dotted;
+    border-bottom-color: #5cb3fd;
+}
+
+h1 {
+    font: 50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:rgb(132,132,132);
+    font-weight: bold;
+}
+
+h2 {
+    font: 30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:rgb(132,132,132);
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+/* Add shadow effect to chart. If you don't like it, get rid of it. */
+svg {
+    -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.3) );
+    filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
+}
+
+/*Styling for the lines connecting the labels to the slices*/
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+
+}
+
+/* Make the percentage on the text labels bold*/
+.labelName tspan {
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* In biology we generally italicise species names. */
+.labelName {
+    font-size: 0.9em;
+    font-style: italic;
+}
